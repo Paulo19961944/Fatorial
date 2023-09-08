@@ -1,6 +1,7 @@
 package com.github.www;
 import java.util.Scanner;
 import java.math.BigInteger;
+import java.text.DecimalFormat;
 
 public class Fatorial {
     public static void main(String[] args) {
@@ -19,11 +20,15 @@ public class Fatorial {
             // Calcula o Fatorial
             BigInteger fatorial = calcularFatorial(BigInteger.valueOf(numero));
 
+            // Formata o Número
+            DecimalFormat df = new DecimalFormat("###,###,###");
+            String fatorialFormatado = df.format(fatorial);
+
             // Printa o Resultado
             System.out.println();
             System.out.println("********** RESULTADO **********");
             System.out.println();
-            System.out.println("O Resultado é: " + fatorial);
+            System.out.println("O Resultado é: " + fatorialFormatado);
             System.out.println();
             System.out.println("********** PAULO HENRIQUE AZEVEDO DO NASCIMENTO **********");
         } else {
