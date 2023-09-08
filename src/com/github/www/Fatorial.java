@@ -25,7 +25,7 @@ public class Fatorial {
             System.out.println();
             System.out.println("O Resultado é: " + fatorial);
             System.out.println();
-            System.out.println("********** PAULO HENRIQUE AZEVEDO DO NASCIMENTO");
+            System.out.println("********** PAULO HENRIQUE AZEVEDO DO NASCIMENTO **********");
         } else {
             System.out.println("Número fora do intervalo permitido (1 a 100).");
         }
