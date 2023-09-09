@@ -1,4 +1,4 @@
-package com.github.com;
+package com.github.www;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 import java.math.BigInteger;
@@ -9,33 +9,32 @@ public class Fatorial {
         Scanner teclado = new Scanner(System.in);
 
         // Declaração de Variáveis
-        long numero;
+        int numero;
         int i = 1;
         BigInteger fatorial = BigInteger.ONE;
 
         // Captura a Entrada
         System.out.println();
-        System.out.println("********** COMBINAÇÃO **********");
+        System.out.println("********** FATORIAL **********");
         System.out.println();
-        System.out.print("Digite um Número: ");
-        numero = teclado.nextLong();
+        System.out.print("Digite o número: ");
+        numero = teclado.nextInt();
 
         // Calcula o Fatorial
         for (i = 1; i <= numero; i++){
             fatorial = fatorial.multiply(BigInteger.valueOf(i));
         }
 
-        // Formata o Numero
+        // Formata o Número
         DecimalFormat df = new DecimalFormat("###,###,###");
-        String resultadoFormatado = df.format(fatorial);
+        String resultado = df.format(fatorial);
 
-        // Printa o Resultado na Tela
+        // Printar o Resultado na Tela
         System.out.println();
         System.out.println("********** RESULTADO **********");
         System.out.println();
-        System.out.println("O Resultado é: " + resultadoFormatado);
+        System.out.println("O Resultado é: " + resultado);
         System.out.println();
-        System.out.println("********** PAULO HENRIQUE AZEVEDO DO NASCIMENTO **********");
-
+        System.out.println("********** FIM **********");
     }
 }
